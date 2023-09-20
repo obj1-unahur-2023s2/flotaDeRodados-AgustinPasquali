@@ -1,0 +1,21 @@
+import rodados.*
+import dependencias.*
+describe "test de Dependencias"{
+	const deportes = new Dependencia(cantidadDeEmpleados = 45)
+	const cultura = new Dependencia(cantidadDeEmpleados = 31)
+	method initialize(){
+		const cachito = new Corsa(color = 'rojo')
+		deportes.agregarAFlota(cachito)
+		deportes.agregarAFlota(new Corsa(color = 'azul'))
+		deportes.agregarAFlota(new Kwid(conTanqueAdicional = true))
+		deportes.agregarAFlota(new AutoEspecial(capacidad=5 ,velocidad= 160,peso= 1200, color = 'beige'))
+	
+		cultura.agregarAFlota(cachito)
+		cultura.agregarAFlota(new Kwid(conTanqueAdicional = true))
+		cultura.agregarAFlota(new Kwid(conTanqueAdicional = true))
+		cultura.agregarAFlota(new Kwid())
+		traffic.configurar(interiorPopular, motorBataton)
+		cultura.agregarAFlota(traffic)
+	}
+	
+}
